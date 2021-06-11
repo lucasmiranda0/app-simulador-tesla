@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Selecione as opções abaixo para simular o valor do seu Tesla Model 3"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Motor Duplo Tração 4x4:"
+            android:textSize="20sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/motor">
+
+            <RadioButton
+                android:id="@+id/m1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Long Range (220878R$)"
+                />
+
+            <RadioButton
+                android:id="@+id/m2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perfomance (267996R$)"
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Pintura:"
+            android:textSize="20sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/pintura">
+
+            <RadioButton
+                android:id="@+id/p1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Branco (0R$)"
+                />
+
+            <RadioButton
+                android:id="@+id/p2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preto (5235R$)"
+                />
+
+            <RadioButton
+                android:id="@+id/p3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Azul (5235R$)"
+                />
+
+            <RadioButton
+                android:id="@+id/p4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vermelho (10470R$)"
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Interior:"
+            android:textSize="20sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/interior">
+
+            <RadioButton
+                android:id="@+id/i1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preto (0R$)"
+                />
+
+            <RadioButton
+                android:id="@+id/i2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preto e Branco (5235R$)"
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Piloto Automático Aperfeiçoado:"
+            android:textSize="20sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/paa">
+
+            <RadioButton
+                android:id="@+id/paa1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Não adicionar (0R$)"
+                />
+
+            <RadioButton
+                android:id="@+id/paa2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adicionar (5235R$)"
+                />
+
+        </RadioGroup>
+
+        <Button
+            android:text="Calcular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button"/>
+
+    </LinearLayout>
+
+</ScrollView>
